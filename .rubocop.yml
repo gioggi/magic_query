@@ -1,0 +1,56 @@
+require:
+  - rubocop-rspec
+  - rubocop-rspec_rails
+
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 3.3
+  Exclude:
+    - 'vendor/**/*'
+    - 'spec/fixtures/**/*'
+    - 'tmp/**/*'
+
+Style/Documentation:
+  Enabled: false
+
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*'
+    - 'lib/magic_query/rails/generators/**/*'
+
+Metrics/ClassLength:
+  Exclude:
+    - 'lib/magic_query/schema/rails_schema_loader.rb'
+
+Layout/LineLength:
+  Max: 120
+
+Capybara/RSpec/PredicateMatcher:
+  Enabled: false
+
+Gemspec/DevelopmentDependencies:
+  Enabled: false
+
+RSpec/MultipleExpectations:
+  Enabled: true
+
+RSpec/ExampleLength:
+  Enabled: true
+
+RSpec/FilePath:
+  Enabled: true
+
+RSpec/SpecFilePathFormat:
+  Enabled: true
+  Exclude:
+    - 'spec/magic_query/providers/openai_spec.rb'
+    - 'spec/magic_query/rails/controller_spec.rb'
+
+RSpec/FilePath:
+  Enabled: true
+  Exclude:
+    - 'spec/magic_query/providers/openai_spec.rb'
+    - 'spec/magic_query/rails/controller_spec.rb'
+
+
+
