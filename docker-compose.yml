@@ -1,0 +1,14 @@
+services:
+  app:
+    build: .
+    volumes:
+      - .:/app
+      - bundle_cache:/usr/local/bundle
+    working_dir: /app
+    environment:
+      - BUNDLE_PATH=/usr/local/bundle
+    command: bash
+
+volumes:
+  bundle_cache:
+

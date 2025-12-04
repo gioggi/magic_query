@@ -1,0 +1,48 @@
+# Magic Query Configuration
+# This file contains rules and conventions for your database
+
+# Naming conventions
+naming_conventions:
+  table_prefix: ''
+  table_suffix: ''
+  column_naming: 'snake_case'
+
+# Relationships between tables
+relationships:
+  - 'users has_many posts'
+  - 'posts belongs_to users'
+  - 'posts has_many comments'
+  - 'comments belongs_to posts'
+
+# Business rules
+business_rules:
+  - 'Active users have status = "active"'
+  - 'Deleted records have deleted_at IS NOT NULL'
+  - 'Use soft deletes where applicable'
+
+# Table-specific rules
+tables:
+  users:
+    description: 'User accounts table'
+    important_columns:
+      - 'id (primary key)'
+      - 'email (unique, required)'
+      - 'status (active/inactive)'
+  
+  posts:
+    description: 'Blog posts table'
+    important_columns:
+      - 'id (primary key)'
+      - 'user_id (foreign key to users)'
+      - 'published_at (timestamp)'
+
+# Column-specific rules
+columns:
+  email:
+    validation: 'Must be valid email format'
+  
+  status:
+    allowed_values: ['active', 'inactive', 'pending']
+
+
+
