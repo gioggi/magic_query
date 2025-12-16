@@ -283,7 +283,7 @@ bundle exec rubocop
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/yourusername/magic_query.
+Bug reports and pull requests are welcome on GitHub at https://github.com/gioggi/magic_query.
 
 ## License
 
@@ -291,5 +291,5 @@ The gem is available as open source under the terms of the [Apache License 2.0](
 
 ## Copyright
 
-Copyright (c) 2025 Giovanni Esposito
+Copyright (c) 2026 Giovanni Esposito
 

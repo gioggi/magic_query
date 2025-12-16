@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.summary       = 'A Ruby gem that generates SQL queries using AI (OpenAI, Claude, Gemini)'
   spec.description   = 'Magic Query integrates with OpenAI, Claude, and Gemini to generate SQL SELECT queries ' \
                        'from natural language input, using database schema and configuration rules.'
-  spec.homepage      = 'https://github.com/yourusername/magic_query'
+  spec.homepage      = 'https://github.com/gioggi/magic_query'
   spec.license       = 'Apache-2.0'
 
   spec.files         = Dir['lib/**/*', 'README.md', 'LICENSE', 'CHANGELOG.md', '.rubocop.yml']
@@ -29,4 +29,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'simplecov', '~> 0.22'
   spec.add_development_dependency 'webmock', '~> 3.18'
   spec.metadata['rubygems_mfa_required'] = 'true'
+  spec.metadata['source_code_uri'] = 'https://github.com/gioggi/magic_query'
+  spec.metadata['changelog_uri'] = 'https://github.com/gioggi/magic_query/blob/main/CHANGELOG.md'
 end
