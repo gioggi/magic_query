@@ -9,6 +9,8 @@ AllCops:
     - 'vendor/**/*'
     - 'spec/fixtures/**/*'
     - 'tmp/**/*'
+    - 'schema.rb'
+    - 'test_locale.rb'
 
 Style/Documentation:
   Enabled: false
@@ -39,14 +41,11 @@ RSpec/ExampleLength:
 
 RSpec/FilePath:
   Enabled: true
-
-RSpec/SpecFilePathFormat:
-  Enabled: true
   Exclude:
     - 'spec/magic_query/providers/openai_spec.rb'
     - 'spec/magic_query/rails/controller_spec.rb'
 
-RSpec/FilePath:
+RSpec/SpecFilePathFormat:
   Enabled: true
   Exclude:
     - 'spec/magic_query/providers/openai_spec.rb'
