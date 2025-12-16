@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    magic_query (0.1.0)
+    magic_query (0.1.2)
       activesupport (>= 6.0)
       faraday (~> 2.0)
 
